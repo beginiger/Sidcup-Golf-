@@ -33,3 +33,8 @@ let dets = document.addEventListener("mousemove", function(dets){
     cursorBlur.style.top = dets.clientY - 200 + "px";
     cursorBlur.style.left = dets.clientX -200 + "px";
 })
+
+// var scroll = new LocomotiveScroll({
+//     el:document.querySelector("body") ,
+//     smooth:true 
+// })
