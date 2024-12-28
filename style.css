@@ -161,7 +161,7 @@
 
 #scroller h4 {
   display: inline-block;
-  font-size: 120px;
+  font-size: 110px;
   font-weight: 900;
   margin-right: 20px;
   transition: all linear 0.3s;
@@ -188,12 +188,13 @@
 .about{
   display: flex;
   height: 50vh;
-  width: 100%;
-  justify-content: space-around;
+  width: 90%;
+  margin: auto;
+  justify-content: space-between;
   align-items: center;
-  border: 2px solid red;
+  /* border: 2px solid red; */
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 5px;
 }
 
 .cards img{
@@ -209,13 +210,119 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  gap: 20px;
+  line-height: 30px ;
 }
 .aboutText p{ 
-  font-size: 20px;
+  font-size: 21px;
 }
 
 .cardSection{
+  padding: 40px;
+  width: 90%;
+  margin: auto;
   background-color: black;
-  height: 50vh;
-  border: 2px solid red;
+  /* margin:20px 0px ; */
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: space-around;
+
+}
+
+
+.dotImage{
+  width: 200px;
+  position: absolute;
+  left: 55px;
+
+}
+
+.scard{
+  height: 500px;
+  width: 385px;
+  border-radius: 20px;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  z-index: 90;
+}
+
+
+.scard img{
+  height: 500px;
+  width: 395px;
+  
+}
+
+.card1 {
+  background-image: url(https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/home-toptracer-1024x682.jpg?strip=all&lossy=1&sharp=1&ssl=1);
+}
+.card2 {
+  background-image: url(https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/hero-4-1024x1024.jpg?strip=all&lossy=1&sharp=1&ssl=1);
+}
+.card3 {
+  background-image: url(https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/home-lessons-1024x682.jpg?strip=all&lossy=1&sharp=1&ssl=1);
+}
+
+.overlay{
+  width: 100%;
+  height: 100%;
+  background-color: #a5d71e;
+  opacity: 0;
+  justify-content: space-around;
+  transition: all 0.4s ease;
+  position: relative;
+
+}
+
+.scard:hover .overlay {
+  opacity: 1;
+}
+
+
+.overlayContent{
+  padding: 0px 10px;
+  margin: auto;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+
+}
+.overlayContent p{
+  color: black;
+  text-align: left;
+}
+
+.overlayContent h2{
+  color: black;
+  font-size: 1.9rem;
+  text-align: center;
+
+}
+
+.circle{
+  height: 120px;
+  width: 120px;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 2px solid black;
+  position: relative;
+  left: 300px;
+  bottom: 30px;
+
+}
+
+.page3{
+  height: 100vh;
+  width: 100vh;
+  background-color: black;
+}
+
+.greensec{
+  height: 30vh;
+  width: 100vw;
+  background-color: #a5d71e;
+  position: relative;
+  bottom: 450px;
 }
